@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- google fonts cdn link start -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- google fonts cdn link end -->
+  <!-- daisy ui & tailwind css cdn link start -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy ui & tailwind css cdn link end -->
+  <!-- font family style start -->
+  <style>
+    * {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+  <!-- font family style end -->
+  <!-- tailwind color customization start -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': "#1C1C1C",
+            'secondary-color': "#777",
+          }
+        }
+      }
+    }
+  </script>
+  <!-- tailwind color customization end -->
+</head>
+
+<body>
+ <!-- header area start -->
+ <header class="container p-5 lg:p-10 mx-auto">
+  <div class="hero">
+    <div class="hero-content flex-col lg:flex-row">
+
+      <div class="lg:w-1/2 text-center lg:text-start">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl text-primary-color leading-[50px] md:leading-[70px] lg:leading-[80px] font-extrabold">
+          It's good <br>
+          tea time at The <br>
+          Tea House</h1>
+        <p class="py-6 text-secondary-color text-lg font-medium leading-[30px]">Tea and Botanical Solutions Supplier
+          Give Optimum Satisfaction To Your Taste Buds.</p>
+        <button class="btn bg-gradient-to-r from-[#F00] to-[#FF8938]">Explore More <img src="images/arrow.png"
+            alt=""></button>
+      </div>
+      <div class="relative lg:w-1/2 ">
+        <img src="./images/banner.png" class="rounded-lg w-full h-96" />
+        <div class="bg-white rounded-lg shadow-2xl w-60 flex gap-2 p-5 absolute bottom-0 md:left-10">
+          <img src="images/Group 5.png" alt="">
+          <div class="">
+            <p>5.00</p>
+            <p class="font-semibold text-secondary-color">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+ <!-- header area end -->
+  <!-- main area start  -->
+  <main class="container p-5 lg:p-10 mx-auto">
+    <!-- Our Featured Products start -->
+    <section class="text-center my-10">
+      <h2 class="text-primary-color text-4xl font-extrabold">Our Featured Products</h2>
+      <p class="py-6 text-secondary-color font-medium leading-[30px] max-w-[900px] mx-auto">There are many variations of passages of Lorem
+        Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words
+        which don't look even slightly believable. </p>
+        <!-- card container start -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-14 text-2xl font-extrabold text-primary-color">
+            <!-- card 01 start -->
+            <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F400] p-4 shadow-xl">
+              <figure><img src="images/tea-1.png" alt="Shoes" /></figure>
+              <div class="card-body px-0">
+                <h2 class="card-title text-2xl font-extrabold text-primary-color mx-auto">Milk Tea</h2>
+                <p class="text-secondary-color font-medium text-base">Creamer could be replaced by fresh milk</p>
+              </div>
+            </div>
+            <!-- card 01 end -->
+            <!-- card 02 start -->
+            <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F400] p-4 shadow-xl">
+              <figure><img src="images/tea-2.png" alt="Shoes" /></figure>
+              <div class="card-body px-0">
+                <h2 class="card-title text-2xl font-extrabold text-primary-color mx-auto">Black Tea</h2>
+                <p class="text-secondary-color font-medium text-base">Creamer could be replaced by fresh milk</p>
+              </div>
+            </div>
+            <!-- card 02 end -->
+            <!-- card 03 start -->
+            <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F400] p-4 shadow-xl">
+              <figure><img src="images/tea-3.png" alt="Shoes" /></figure>
+              <div class="card-body px-0">
+                <h2 class="card-title text-2xl font-extrabold text-primary-color mx-auto">Lemon Tea</h2>
+                <p class="text-secondary-color font-medium text-base">Creamer could be replaced by fresh milk</p>
+              </div>
+            </div>
+            <!-- card 03 end -->
+            <!-- card 04 start -->
+            <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F400] p-4 shadow-xl">
+              <figure><img src="images/tea-4.png" alt="Shoes" /></figure>
+              <div class="card-body px-0">
+                <h2 class="card-title text-2xl font-extrabold text-primary-color mx-auto">Green Tea</h2>
+                <p class="text-secondary-color font-medium text-base">Creamer could be replaced by fresh milk</p>
+              </div>
+            </div>
+            <!-- card 04 end -->
+        </div>
+        <!-- card container end -->
+    </section>
+    <!-- Our Featured Products end -->
+  </main>
+  <!-- main area end -->
+  <footer></footer>
+</body>
+
+</html>
